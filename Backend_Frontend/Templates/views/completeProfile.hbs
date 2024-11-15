@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor_profile</title>
+    <link rel="stylesheet" href="/css/completeProfile.css">
+    {{>HeadLinks}}
+
+</head>
+
+<body>
+
+    <div id="message">
+
+    </div>
+
+    <div class="nav pt-4">
+        <ul>
+            {{!-- <p class="h1">Complete Your Profile</p> --}}
+            <h2 class="h1_feature" style="text-align: center;">Complete  <span class="highlight">Your Profile</span>
+            </h2>
+
+        </ul>
+    </div>
+
+    <div class="message">
+        <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-1 p-5 box">
+
+        {{!-- <p class="h3">Thali items</p> --}}
+        <h6 class="h1_feature" style="text-align: center; font-size: 2.0rem;">Thali <span class="highlight">Items</span>
+        </h6>
+        <form action="/completeProfile" method="put">
+            <div class="grid">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input required type="text" id="city" name="city" min="0" onchange="(e)=>{getData(e.target.value)}">
+                </div>
+                <div class="form-group">
+                    <label for="veg-dish">Number of Vegetable Dish</label>
+                    <input required type="number" id="veg-dish" name="vegitableDish" min="0" required
+                        onchange="(e)=>{getData(e.target.value)}">
+                </div>
+                <div class="form-group">
+                    <label for="rice-count">Number of Rice Plate</label>
+                    <input required type="number" id="rice-count" name="ricePlate" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="wheat-roti-count">Number of Wheat Roti</label>
+                    <input required type="number" id="wheat-roti-count" name="wheatRoti" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="salad-count">Number of Salad</label>
+                    <input required type="number" id="salad-count" name="salad" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="veg-dish">Thali Price</label>
+                    <input required required type="number" id="thali-price" name="vegdish" min="0" name="priceOfThali"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="veg-dish">Dabba Delivery Available </label>
+                    <input required type="checkbox" checked hidden="hidden" id="dilivery-system" value="val1"
+                        name="dabbaSystem">
+                    <label class="switch" for="username1"></label>
+                </div>
+
+
+            </div>
+            <div class="grid">
+
+                <div class="form-group">
+                    <label for="start-time">Mess Timing - Start Time:</label>
+                    <input required type="time" id="start-time" name="starttime" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-time">Mess Timing - End Time:</label>
+                    <input required type="time" id="end-time" name="endtime" required>
+
+                </div>
+                <div class="form-group">
+                    <label for="veg-dish">Mess Type</label>
+                    <label class="visually-hidden " for="inlineFormSelectPref">Preference</label>
+                    <select class="select typeMultiple" id="mess-type" name="messType">
+                        <option value="1">Pure Veg</option>
+                        <option value="2">Non-Veg</option>
+                        <option value="3">Veg/Non-Veg</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="accept-new-members">Accept New Members</label>
+
+                    <!-- Default checked -->
+                    <input required class="form-check-input" type="checkbox" checked hidden="hidden" id="new-Member"
+                        value="val2" name="messacceptingNewCustomer">
+
+
+                    <label class="switch" for="username2"></label>
+
+
+                </div>
+
+                <div class="form-group">
+                    <label for="total-member">Mess Total Customer</label>
+                    <input required type="number" id="total-member" name="messnumberOfCustomer" min=" 0" required>
+                </div>
+            </div>
+
+            <div class="d-flex aline-item-center justify-content-center pt-5">
+                <button type="submit" class="btn saveBtn" id="btnSaveProfile" style="width: 33%;">Save</button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <script src="/js/completeProfile.js"></script>
+    {{>FootLinks}}
+</body>
+
+</html>

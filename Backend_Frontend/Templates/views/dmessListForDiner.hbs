@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess list from the dinor</title>
+    <link rel="stylesheet" href="/css/messList.css">
+    {{>HeadLinks}}
+</head>
+
+<body>
+    {{>dinorNavbar}}
+    {{!-- <h3>Mess List from the dinor</h3> --}}
+    <div id="message">
+
+    </div>
+    <div class="container-fluid fetures">
+        <div class="container p-4">
+            <h2 class="h1_feature" style="text-align: center;">Inspiration for <span class="highlight">good food</span>
+            </h2>
+            <div class="images p-3">
+                <img src="/img/img1.avif" alt="image 1">
+                <img src="/img/img2.webp" alt="image 2">
+                <img src="/img/img3.avif" alt="image 3">
+            </div>
+        </div>
+    </div>
+    <div class="filter container d-flex justify-content-center aline-item-center p-4">
+        <div tabindex="0" class="sc-eWDEPs lbQdKe" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="sc-blJnwB bTYUbj "><i class="sc-rbbb40-1 iFnyeo" size="18" color="#9C9C9C"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="#9C9C9C" width="18" height="18" viewBox="0 0 20 20"
+                        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ">
+                        <title>filter</title>
+                        <path
+                            d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z">
+                        </path>
+                    </svg></i></div>Filters
+        </div>
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Filter
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+
+
+                                        <!-- Default radio -->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="BasedOnLocatio" />
+                                            <label class="form-check-label" for="flexRadioDefault1"> Based On Your
+                                                Location
+                                            </label>
+                                        </div>
+
+                                        <!-- Default checked radio -->
+                                        {{!-- <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked />
+                                            <label class="form-check-label" for="flexRadioDefault2">Cost:
+                                                Low-High</label>
+                                        </div> --}}
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close"
+                            id="clearFilter">Clear
+                            Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container p-3">
+        <div class="p-3 container">
+            <p class=" h1_feature p-1 py-3">Top Food <span class="highlight">Picks</span> </p>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="messListPopulation">
+
+            </div>
+        </div>
+    </div>
+    {{>FootLinks}}
+    <script src="/js/messList.js"></script>
+</body>
+
+</html>

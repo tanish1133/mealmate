@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile As Dinor</title>
+    <link rel="stylesheet" href="/css/dUpdateProfile.css">
+    {{>HeadLinks}}
+
+</head>
+
+<body>
+    {{>dinorNavbar}}
+    <div id="message">
+
+    </div>
+    <div class="d-flex justify-content-center aline-item-center flex-column">
+        <div class="nav pt-4 d-flex justify-content-center aline-item-center">
+            <ul>
+                <p class="h1_feature" style="text-align: center;">Update <span class="highlight">Profile</span></p>
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="container mt-1 p-5 box">
+
+
+            <form action="/completeProfile" method="put">
+                <div class="grid">
+
+                    <div class="form-group">
+                        <label for="veg-dish">Name</label>
+                        <input type="text" id="dname" name="username" min="0" required
+                            onchange="(e)=>{getData(e.target.value)}">
+                    </div>
+                    <div class="form-group">
+                        <label for="veg-dish">Address</label>
+                        <input required type="text" id="daddress" name="useraddress" min="0"
+                            onchange="(e)=>{getData(e.target.value)}">
+                    </div>
+                    <div class="form-group">
+                        <label for="veg-dish">Phone Number</label>
+                        <input required type="number" id="dphone" name="userphoneNumbe" min="0"
+                            onchange="(e)=>{getData(e.target.value)}">
+                    </div>
+
+
+                </div>
+
+
+                <div class="d-flex aline-item-center justify-content-center pt-5">
+                    <button type="submit" class="btn saveBtn" id="btnSaveProfile" style="width: 33%;" disabled>Save
+                        Changes</button>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="/js/dUpdateProfile.js"></script>
+    {{>FootLinks}}
+</body>
+
+</html>

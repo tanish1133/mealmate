@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messdetail</title>
+    <link rel="stylesheet" href="/css/messDetail.css">
+    {{>HeadLinks}}
+</head>
+
+<body>
+    {{>dinorNavbar}}
+
+    <div class="container-fluid" style="background: rgb(238 238 238);">
+        <div class="container p-5" id="messMainDetail">
+            <div class="d-flex">
+                <h2 class="card-title " style="width: 100%;">Mess Name</h2>
+                <div class="d-flex aline-item-center justify-content-centerv ms-auto">
+                    <button class="btn btn1 likeDisButton shadow-0 mx-4 p-0" id="green"><i class="fa fa-thumbs-up fa-lg"
+                            aria-hidden="true"></i> 1</button>
+                    <button class=" btn btn1 likeDisButton shadow-0 p-0" id="red"><i class="fa fa-thumbs-down fa-lg"
+                            aria-hidden="true"></i> 1</button>
+                </div>
+            </div>
+
+
+
+            <div class="d-flex mt-4">
+                <p class="card-title " style="width: 50%;">Near school number one</p>
+                <div class="d-flex aline-item-center justify-content-centerv ms-auto p=0">
+                    <p class="card-title " style="width: 100%;">&#8377; 120 for one </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="d-flex flex-column justify-content-center">
+            <h2 class="card-title p-3 h1_feature" style="width: 100%;">Details About <span
+                    class="highlight">Dining</span> </h2>
+            <div class="container1 mt-1 box m-0">
+                <div id="message"></div>
+                <form>
+                    <div id="completeDetailAboutMess">
+                        <div class="grid">
+                            <div class="form-group">
+                                <label for="veg-dish">Number of Vegetable Dish</label>
+                                <input disabled type="text" id="veg-dish" disable>
+                            </div>
+                            <div class="form-group">
+                                <label for="rice-count">Number of Rice Plate</label>
+                                <input type="text" id="rice-count" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="wheat-roti-count">Number of Wheat Roti</label>
+                                <input type="text" id="wheat-roti-count" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="salad-count">Number of Salad</label>
+                                <input type="text" id="salad-count" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="veg-dish">Thali Price</label>
+                                <input type="text" id="veg-dish" value="vedang" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="veg-dish">Dabba Delivery Available </label>
+                                <input type="text" id="wheat-roti-count" value="Available" disabled>
+                            </div>
+
+
+                        </div>
+                        <div class="grid">
+
+                            <div class="form-group">
+                                <label for="start-time">Mess Timing - Start Time:</label>
+                                <input type="text" id="wheat-roti-count" value="Available" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="end-time">Mess Timing - End Time:</label>
+                                <input type="text" id="wheat-roti-count" value="Available" disabled>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="veg-dish">Mess Type</label>
+                                <input type="text" id="wheat-roti-count" value="Available" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="accept-new-members">Accept New Members</label>
+
+                                <input type="text" id="wheat-roti-count" value="Yes" disabled>
+
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="total-member">Mess Total Customer</label>
+                                <input type="text" id="wheat-roti-count" value="30" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex aline-item-center justify-content-center pt-5">
+                        <button type="submit" class="btn saveBtn" id="btnSaveProfile" style="width: 33%;">Make
+                            Request</button>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--Section: Contact v.2-->
+    <section class="mb-4 sec3 m-0">
+
+        <div id="messageFromFeed"></div>
+
+        <h2 class="h1-responsive font-weight-bold text-center my-4 h1_feature">What Did You Think Of <span
+                class="highlight">Your Dining
+                Experience</span> </h2>
+        <p class="text-center w-responsive mx-auto mb-5" style="font-size: 1.1rem;">Do you have any questions? Send your
+            suggestions to the dining
+            owner through feedback.</p>
+
+        <div class="row " style="justify-content:center;">
+
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="myFeedbackForm" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <label for="message" class="py-3">We value your feedback</label>
+
+                                <textarea type="text" id="feedbackMessage" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary btn3" style="background: #677eff; width:34%" id="feedbackBtn">Send</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <div class="d-flex justify-content-center align-items-center flex-column p-5">
+        <h2 class="card-title p-3 h1_feature" style="width: 100%;">Feedback for <span class="highlight">dining
+                decision</span>
+        </h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="feedbackDiv">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body p-4">
+                        {{!-- <h5 class="card-title">Card title</h5> --}}
+                        <p class="card-text">
+                            Be the first to provide feedback about your dining experience to help the restaurant owner
+                            and others
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {{>FootLinks}}
+
+    <script src="/js/messDetail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* code for the wave animation  */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+.home {
+    min-height: 95vh;
+    width: 100vw;
+    background: linear-gradient(rgb(173, 145, 246), var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+    background: url("/img/SL_060521_43530_17.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*************************mychage***********************/
+.home .banner {
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    font-weight: bold;
+}
+
+.banner span {
+    color: #680db7;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    font-weight: bold;
+}
+
+.home .slogan {
+    color: #eee;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.btn-center {
+    margin-top: 1rem;
+}
+
+.home a {
+    padding: 8px 56px;
+    border-radius: 6px;
+    background: #752db4;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    text-decoration: none;
+}
+
+.home a:hover {
+    /* background-color: #2010d8; */
+    background: #8350af;
+
+}
+
+.home button:hover {
+    letter-spacing: .1rem;
+}
+
+.h1_feature {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+.h1_feature span {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #a92ccd;
+}
+
+.heading_our_data {
+    color: #a92ccd;
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+.heading_our_data span {
+    color: black;
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 1.2rem;
+    font-size: 1.7rem;
+    text-align: justify;
+    font-family: 'Karla', sans-serif;
+}
+
+.foot_rt p,
+.foot_rt p a {
+    font-family: 'Karla', sans-serif;
+    color: black;
+}
+
+.foot_top {
+    width: 100%;
+    background: #bd90c5;
+    padding: 60px 0;
+}
+
+.foot_btm {
+    width: 100%;
+    background: rgb(233 209 237);
+    padding: 15px 0;
+}
+
+.foot_btm p {
+    font-family: 'Karla', sans-serif;
+    color: black;
+}
+
+.foot_btm p a {
+    color: black;
+}
+
+/*************************mychage***********************/
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+
+
+/* code for the static wave section */
+.spliterSection {
+    /* background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%); */
+    background-image: url(./ffflux.svg);
+    background-position: center;
+    background-size: cover;
+
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.splitTitle {
+    color: black;
+    text-align: center;
+    display: flex;
+}
+
+.custom-shape-divider-bottom-1679248280 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679248280 svg {
+    position: relative;
+    display: block;
+    width: calc(168% + 1.3px);
+    height: 68px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1679248280 .shape-fill {
+    fill: #F5F5F5;
+}
+
+
+:root {
+    --color: #6C5CE7;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.heading {
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color);
+    position: relative;
+    letter-spacing: .2rem;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.team {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #222;
+    ;
+}
+
+.team .heading {
+    color: #fff;
+}
+
+.team .heading::before,
+.team .heading::after {
+    border-color: #fff;
+}
+
+.team .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team .row .card {
+    height: 35rem;
+    width: 25rem;
+    background: #fff;
+    text-align: center;
+    margin: 7rem 2rem;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-reflect: below .2rem linear-gradient(transparent 70%, #0004);
+}
+
+.team .row .card .image {
+    margin: 1rem 0;
+    padding-top: 4rem;
+}
+
+.team .row .card .image img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+    object-fit: cover;
+}
+
+.team .row .card .info h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.team .row .card .info span {
+    font-size: 1.8rem;
+    color: var(--color);
+}
+
+.team .row .card .info .icons a {
+    margin-top: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.team .row .card .info .icons a:hover {
+    color: var(--color);
+}
+
+.team .row .card::before,
+.team .row .card::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    z-index: -1;
+}
+
+.team .row .card::before {
+    background: var(--color);
+    top: -3rem;
+    right: -4rem;
+}
+
+.team .row .card::after {
+    background: #ccc;
+    bottom: -3rem;
+    left: -4rem;
+}
+
+.our_data {
+
+    display: flex;
+    align-items: center;
+    padding: 5%;
+
+}
+
+.our_data a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.our_data a:hover {
+    background-color: #0062cc;
+}
+
+
+
+/* contact us css */
+.contact {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .image img {
+    height: 50vh;
+    width: 70vw;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.contact .row .form-container input,
+textarea {
+    outline: none;
+    border: none;
+    height: 4rem;
+    background: none;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.contact .row .form-container .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .row .form-container .inputBox input[type="text"] {
+    width: 49%;
+}
+
+.contact .row .form-container input[type="email"] {
+    width: 100%;
+}
+
+.contact .row .form-container textarea {
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+    /* background-color: var(--color); */
+    background: #752db4;
+    color: #fff;
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    background: #7f41b5;
+}
+
+
+
+.get_started {
+    border-radius: 0.5rem;
+
+}
+
+.img-set {
+    width: 900px;
+    height: 500px;
+}
+
+
+
+.form-contact {
+    margin-top: 0%;
+}
+
+.h_3 {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.h_3:hover {
+    color: rgb(11, 21, 208);
+}
+
+
+.foot_sec {
+    margin-top: 15%;
+    width: 100%;
+}
+
+.foot_left {
+    width: 100%;
+}
+
+.foot_left img {
+    max-width: 30%;
+    margin-bottom: 20px;
+}
+
+.foot_left p {
+    font-family: 'Karla', sans-serif;
+    color: #151111;
+    font-size: 1.7rem;
+    margin-right: 3rem;
+}
+
+.foot_rt {
+    width: 100%;
+}
+
+.foot_rt h3 {
+    font: 600 22.52px/28px "Poppins", sans-serif;
+    color: #fff;
+}
+
+.foot_rt p span {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+
+.p_tag {
+    text-align: left
+}
+
+
+.price {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.price:hover .price:nth-child(1) {
+    margin-right: 5px;
+}
+
+.price:hover .price:nth-child(1):after {
+    content: "'";
+}
+
+.price:hover .price:nth-child(2) {
+    margin-left: 30px;
+}
+
+.price:hover {
+    color: #f2f3f9;
+    text-shadow: 0 0 10px #e36e6e, 0 0 20px #e7bdbd, 0 0 40px #9e9595;
+}

@@ -1,0 +1,327 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ecf9ff;
+}
+
+body {
+    color: #272727;
+    font-family: 'Quicksand', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.containerfc {
+    max-width: 800px;
+    /* adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.images img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .containerfc {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .images img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .counters span {
+        font-size: 14px;
+    }
+}
+
+/* h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+} */
+.py-3 {
+    text-align: center;
+}
+
+.counters span {
+    display: inline-block;
+    width: 30px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons img {
+    display: inline-block;
+    width: 27px;
+    margin: 0 10px;
+}
+
+img {
+    /* height: auto; */
+    /* max-width: 100%; */
+    vertical-align: middle;
+}
+
+.btn {
+    /* color: #ffffff; */
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* .card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+} */
+
+/* .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+} */
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#popup button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+    background-color: #3e8e41;
+}
+
+#popup input[type="radio"] {
+    margin-right: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 1rem / normal Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.myfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4494ff;
+    color: #050303;
+    text-align: center;
+}
+
+.main-div {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.box {
+    transition: box-shadow .3s;
+    cursor: pointer;
+}
+
+.box:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+.fetures {
+    background: rgb(230 229 229);
+}
+
+.lbQdKe {
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 0.8rem;
+    padding: 0.6rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    font-size: 1.3rem;
+    gap: 0.5rem;
+    width: 10%;
+    justify-content: center;
+}
+
+.iFnyeo {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: inherit;
+}
+
+.likeDisButton {
+    cursor: pointer;
+    outline: 0;
+    color: #AAA;
+    width: 19%;
+    height: 20%;
+
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.h1_feature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #752db4;
+}

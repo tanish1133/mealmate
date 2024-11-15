@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/css/registerCss.css">
+    {{>HeadLinks}}
+
+</head>
+
+<body>
+    {{>navBar}}
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <h1>Welcome As Diner!</h1>
+                    <p>Create an account for being a diner and start enjoying the service.</p>
+                </div>
+                <div class="formBx">
+                    <form action="/dRegister" method="post">
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="User Name" name="username" />
+                        <input type="email" placeholder="Email Address" name="useremail" />
+                        <input type="password" placeholder="Password" name="userPassword" />
+                        <input type="password" placeholder="Confirm password" name="cpassword" />
+                        <input type="text" placeholder="Address" name="useraddress" />
+                        <input type="phone" placeholder="Phone Number" name="userphoneNumbe" />
+                        <input type="submit" name="" value="Sign Up" onclick="(e)=>{e.preventDefault()}" />
+                        <p class="signup">
+                            Have an account as Food Vendor?
+                            <a href="/vregister" style="cursor: pointer;">Sign
+                                Up.</a>
+
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="/js/registerJs.js"></script>
+
+    {{>FootLinks}}
+</body>
+
+</html>

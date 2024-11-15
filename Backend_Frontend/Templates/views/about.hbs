@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <style>
+        /* Small screens */
+        @media screen and (max-width: 576px) {
+            h2 {
+
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        /* Medium screens */
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            h2 {
+                font-size: 28px;
+                line-height: 40px;
+            }
+
+            span {
+                font-size: 18px;
+            }
+        }
+
+        /* Large screens */
+        @media screen and (min-width: 769px) {
+            h2 {
+                font-size: 35px;
+                line-height: 48px;
+            }
+
+            span {
+                font-size: 19px;
+            }
+
+        }
+    </style>
+    {{>HeadLinks}}
+</head>
+
+<body>
+    {{>navBar}}
+
+    <section id="home" class="home">
+
+        <div class="d-flex justify-content-center aline-item-center flex-column p-5 " style=" border-radius: 0.5rem;">
+            <h1 class="banner" style="color: rgb(44, 42, 42);">WELCOME TO MEAL<span>MATE</span></h1>
+            <h3 class="slogan" style="color: rgb(67, 66, 66);">Find Your Meal, Your One-Stop Solution for Quality Meals
+            </h3>
+            <div class="btn-center p-4">
+                <a class="login-btn " href="/login">Login</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    </div>
+
+
+
+    <h1 class="h1_feature">Our <span>features</span></h1>
+    <div class="our_data">
+
+        <div style="flex: 1;">
+            <img src="/img/ab.svg" alt="Image">
+        </div>
+        <div style="flex: 1;">
+
+            <h1 class="heading_our_data"><span>Quick</span> Search</h1>
+            <p>Our Quick Search feature allows users to easily find nearby messes and restaurants that offer the food
+                they want. With just a few clicks, students can filter their search results by location, cuisine type,
+                price, and rating. This feature saves students time and effort by providing them with a quick and
+                efficient way to find the best food options in their area.
+            </p>
+
+        </div>
+
+    </div>
+    <div class="our_data">
+        <div style="flex: 1;">
+            <h1 class="heading_our_data"><span>Feedback and</span> Reviews</h1>
+            <p> This feature would allow users to leave feedback and reviews of messes they have visited. They could
+                rate the quality of food, cleanliness, service, and overall experience. Other users could view these
+                reviews to help them make decisions about which mess to visit. Mess owners could also respond to reviews
+                to address any issues or concerns</p>
+
+        </div>
+        <div style="flex: 1;" class="image_set" style=" width: 2%;
+        height: 2%;">
+            <img src="/img/rating.jpg" alt="Image" style=" width: 100%;
+            height: 100%; border-radius: 2rem; margin-left: 5rem;">
+        </div>
+    </div>
+    <div class="our_data">
+        <div style="flex: 1;">
+            <img src="/img/contact-us.png" alt="Image" class="img-fluid">
+        </div>
+        <div style="flex: 1;">
+            <h1 class="heading_our_data"><span>Contact Mess </span>Owners</h1>
+            <p>This provide users with contact information for mess owners, such as phone numbers and
+                email addresses. This would allow users to ask questions, make reservations, or provide feedback
+                directly to the mess owner. Mess owners could use this feature to communicate with customers about
+                specials, events, or other updates.</p>
+
+        </div>
+
+    </div>
+    <div class="our_data">
+
+        <div style="flex: 1;">
+            <h1 class="heading_our_data"><span>Food </span>Diversity</h1>
+            <p> This highlights the diversity of cuisine available on the platform, catering to students
+                from different cultural backgrounds. It allows students to discover new flavors and experience local
+                cuisine, while also ensuring that they have access to meals that meet their dietary requirements. The
+                food diversity section celebrates diversity and promotes inclusivity, making sure that every student
+                feels welcome and satisfied.</p>
+
+        </div>
+        <div style="flex: 1;">
+            <img style="height: auto;width:auto;margin-left: 3rem;" src="/img/food.png" alt="Image"
+                class="img-set img-fluid">
+        </div>
+    </div>
+
+    <div class="our_data">
+        <div style="flex: 1;">
+            <img src="/img/ab.svg" alt="Image">
+        </div>
+        <div style="flex: 1;">
+            <h1 class="heading_our_data"><span>About</span> us</h1>
+            <p>At MealMate, we understand the challenges that students face when it comes to finding good quality and
+                affordable food. Our online platform is designed to make it easier for students to find and compare
+                messes and restaurants in their area, with information on the type of food they offer, their location,
+                pricing, and feedback from other users. Our goal is to provide a centralized hub for communication
+                between messes and students, allowing for easy updates and notifications about changes in menu or
+                timings. We strive to provide a user-friendly experience, with a focus on performance, availability,
+                security, and scalability. At MealMate, we believe that good food should be accessible to everyone, and
+                we are committed to helping students make informed decisions about where they eat.
+            </p>
+
+        </div>
+
+    </div>
+    <section id="team" class="team">
+
+        <h1 class="heading heading_our_data">Our Team</h1>
+
+        <div class="row">
+
+            <div class="card">
+                <div class="image">
+                    <img src="/img/4.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Vedang Surnis</h3>
+                    
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="/img/2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Purshottam Rajpurohit</h3>
+                    
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="/img/5.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Tejas Pundpal</h3>
+                    
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="/img/1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Tanish Kundal</h3>
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="contact" class="contact contact1">
+        <h1 class="heading  heading_our_data">Contact us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="/img/img-contact.svg" alt="">
+            </div>
+
+            <div class="form-container">
+                <div id="toastMessage">
+
+                </div>
+                <form action="" method="post">
+                    <div id="conatctForm">
+                        <div class="inputBox">
+                            <input class="inputToCon" name="name" type="text" placeholder="first name" required>
+                            <input class="inputToCon" type="text" name="last_name" placeholder="last name" required>
+                        </div>
+
+                        <input name="email" class="" type="email" placeholder="email" required>
+
+                        <input name="pnumber" class=" w-100" type="number" placeholder="Phone Number" required>
+
+                        <input name="message" id="messageForMail" class="inputToCon w-100" type="text"
+                            placeholder="inquire" required>
+
+
+
+
+                    </div>
+                    <div class="d-flex justify-content-center aline-item-center">
+                        <input type="submit" name="message" value="send" style="width: 67%;" id="makeContact" disabled>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="foot_sec">
+        <div class="foot_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="foot_left">
+                            <img src="/img/logo-main.png" alt="" style="width: 10rem;">
+                            <p>MealMate simplifies the task of finding affordable, quality meals for students. Our
+                                online platform offers comprehensive information on messes and restaurants in the area.
+                                Communication between students and messes is facilitated through easy updates and
+                                notifications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="foot_rt">
+                            <h3>CONTACTS</h3>
+                            {{!-- <p>
+                                <span>Address: </span>
+                                
+                            </p> --}}
+                            <p>
+                                <span>Phone: </span>
+                                <a href="">9359274805</a>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <a href="">ved.sur@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="#"> MealMate</a> © 2023. Allright Reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+    <script src="/js/home.js"></script>
+
+
+    {{>FootLinks}}
+</body>
+
+</html>

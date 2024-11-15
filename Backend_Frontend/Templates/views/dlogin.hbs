@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+
+    {{>HeadLinks}}
+</head>
+
+<body>
+    {{>navBar}}
+    <section>
+        <div class="container" id="mainContent">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <h1>Welcome Back Diner!</h1>
+                </div>
+                <div class="formBx">
+                    <form action="/dLogin" method="post">
+                        <h2>Please Login To Continue</h2>
+                        <input type="email" placeholder="Email" name="useremail" />
+                        <input type="password" placeholder="Password" name="userPassword" />
+
+                        <input type="submit" name="" value="Login" class="my-button"
+                            onclick="(e)=>{e.preventdefault()}" />
+                        <p class="signup">
+                            Login as Food Vendor?
+
+                            <a href="/vlogin" style="cursor: pointer;" id="togleBtnLogin">Login.</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="/js/login.js"></script>
+
+    {{>FootLinks}}
+</body>
+
+</html>

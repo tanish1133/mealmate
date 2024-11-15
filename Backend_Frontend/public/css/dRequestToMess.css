@@ -1,0 +1,95 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+body {
+    background-color: #e4e4e4;
+}
+
+.requestDiv {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: #555;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: #555;
+}
+
+.h1_feature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #752db4;
+}
+
+.photo-container {
+    font-size: 1.5em;
+    background: #677eff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+        'photo info';
+    grid-template-columns: 150px 1fr;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    line-height: 1.75em;
+}
+
+.info-container {
+    padding: 20px;
+    grid-area: info;
+}
+
+.event-name {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.event-location {
+    font-weight: 300;
+}
+
+.day {
+    font-weight: 300;
+}
+
+.month {
+    font-weight: 600;
+}
+
+@media(max-width: 600px) {
+    .card-container {
+        width: 90%;
+    }
+}
